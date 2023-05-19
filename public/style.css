@@ -27,7 +27,7 @@ tr:nth-child(even){
     background-color: #ddd;
 }
 
-form .btnAgregar{
+form .btnAgregar, .btnBuscar{
     border: none;
     border-radius: 5px;
     background-color: #246355;
@@ -35,10 +35,15 @@ form .btnAgregar{
     padding: 8px 7px;
 }
 
-form .btnAgregar:hover{
+form .btnAgregar:hover, .btnBuscar:hover{
     background-color: #0f362d;
 }
 
 form .inputId{
     display: none;
+}
+
+form .inputBusqueda{
+    margin-bottom: 15px;
+    width: 30%;
 }

@@ -55,10 +55,10 @@ router.get('/deleteUser/:id', (req, res) => {
     .catch((error) => {res.json({message:error})});
 });
 
-router.post('/find', (req, res) =>{
-    User.find({ name: { $regex: req.body.criteria, $options: "i"} })
-    .then((users)=>{res.render('users', {Users})})
-    .catch((error)=>{res.json({message:error})});    
+router.post('/find', (req, res) => {
+    User.find({name: {$regex: req.body.criteria, $options: 'i' }}) // la key busca cualquier coincidencia con el criterio de busqueda (sin importar mayusculas o minusculas)
+    .then((Users) => {res.render('index', {Users})}) // envia datos a la vista
+    .catch((error) => {res.json({message:error})});
 });
 
 module.exports = router;

@@ -9,4 +9,13 @@ btnBorrar.addEventListener('click', ()=>{
             return false;
     
     }
+
+    alerta();
 })
+
+/* no sirvio
+const btnBuscar = document.getElementById("btnBuscar");
+btnBuscar.addEventListener('submit', ()=>{
+    btnBuscar.onsubmit();
+})
+*/
